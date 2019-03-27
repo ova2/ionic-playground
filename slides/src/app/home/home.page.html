@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Slides
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-slides [options]="slideOpts">
+      <ion-slide *ngFor="let item of items; let i = index;">
+        <div style="width: 100px; height: 100px; background-color: red">
+          item: {{ item }}
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
